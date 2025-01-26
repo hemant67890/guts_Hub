@@ -33,26 +33,18 @@ bot = Client(
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       f" 𝐻𝑒𝓁𝓁❁ 𝐹𝓇𝒾𝑒𝓃𝒹𝓈 👋,\n𝐹𝓇❁𝓂 𝓉𝒽𝒾𝓈 𝒮𝒾𝒹𝑒 ☟\n\n❤️ 𝐌𝐀𝐑𝐂𝐎 𝐔𝐍𝐈𝐕𝐄𝐑𝐒𝐄 ❤️\n\n❈ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.\n➠ Can Extract Videos & Pdf From Your **TXT** File and Upload to Telegram.\n\n➠ 𝔇𝔦𝔯𝔢𝔠𝔱𝔢𝔡 𝔅𝓎 : ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿", reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("♦ 𝐉𝐨𝐢𝐧 𝐌𝐀𝐈𝐍 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ♦" ,url=f"https://t.me/+9avfoishHmExN2Y1") ],
-                    [
-                    InlineKeyboardButton("👨🏻‍💻 Devloper ＭＡＲＣＯ™ ★" ,url="https://t.me/MARCO_015") ],
-                    [
-                    InlineKeyboardButton("❣️ 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 ❣️" ,url="https://t.me/MARCO_MAIN") ]                               
-            ]))
+       f" 𝐻𝑒𝓁𝓁❁ 𝐹𝓇𝒾𝑒𝓃𝒹𝓈 👋,\n\n❈ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.\n➠ Can Extract Videos & Pdf From Your **TXT** File and Upload to Telegram.\n\n➠ 𝔇𝔦𝔯𝔢𝔠𝔱𝔢𝔡 𝔅𝓎 : ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿")
 
-@bot.on_message(filters.command("ruko"))
+@bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
-    await m.reply_text("**𝚁𝚞𝚔 𝙶𝚢𝚒 ꜱɪʀ 😡**", True)
+    await m.reply_text("**Jii Malik Ruk gya ♦**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["marco"]))
+@bot.on_message(filters.command(["radhe"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('**और कैसे हो😁.😎 \n\n ➠ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 ⚡️\n➠ 𝐌𝐨𝐝𝐢𝐟𝐢𝐞𝐝 𝐁𝐲: 𝐌𝐀𝐑𝐂𝐎 𝐔𝐍𝐈𝐕𝐄𝐑𝐒𝐄 ❖**')
+    editable = await m.reply_text('**𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
@@ -73,12 +65,12 @@ async def account_login(bot: Client, m: Message):
        os.remove(x)
             # print(len(links)
     except:
-           await m.reply_text("**𝓜𝓪𝔃𝓪𝓴 𝓶𝓽 𝓚𝓻.**")
+           await m.reply_text("**Glt hai wps de !**")
            os.remove(x)
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗 ** **{len(links)}**\n\n**जहा से शुरू करना चाहते 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬 ** **1**")
+    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗 ** **{len(links)}**\n\n**𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬 ** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -89,7 +81,7 @@ async def account_login(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸\n\n𝕼𝖚𝖆𝖑𝖎𝖙𝔂 🎬 𝕃ɪᴋᴇ 𝟷𝟺𝟺ᴘ, 𝟸𝟺𝟶ᴘ, 𝟹𝟼𝟶ᴘ, 𝟺𝟾𝟶ᴘ, 𝟽𝟸𝟶ᴘ, 𝟷𝟶𝟾𝟶ᴘ**")
+    await editable.edit("**╭━━━━❰𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸❱━➣\n┣⪼ 144\n┣⪼ 240\n┣⪼ 360\n┣⪼ 480\n┣⪼ 720\n┣⪼ 1080\n╰━━⌈⚡[@MARCO_MAIN]⚡⌋━━➣ **")   
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -113,7 +105,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send\n`ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿`**")
+    await editable.edit("**Enter A Caption.**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -123,7 +115,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now Send Your **🖼 Thumbnail url**\nEg : https://i.imghippo.com/files/yDpB6987rZU.jpg\n\nOr Send **no**")
+    await editable.edit("Now Send Your **🖼 Thumbnail url**\nEg : https://_/_.jpg\n\nOr Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -215,7 +207,7 @@ async def account_login(bot: Client, m: Message):
                 url = url.replace(" ","%20")
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-            name = f'{str(count).zfill(3)}) 𝑴𝑨𝑹𝑪𝑶™×𝑻𝑬𝑹𝑴𝑰𝑵𝑨𝑻𝑶𝑹™~{name1[:60]}'
+            name = f'{str(count).zfill(3)}) 𝔾-𝐔𝐓𝐒🪽~{name1[:60]}'
 
             if "embed" in url:
                 ytf = f"bestvideo[height<={raw_text2}]+bestaudio/best[height<={raw_text2}]"
@@ -239,8 +231,8 @@ async def account_login(bot: Client, m: Message):
         
             try:  
                 
-                cc = f'**[ 🎥 ] ViÐeo_IÐ :** {str(count).zfill(3)}.**\n**νι∂єσ ηαмє »** {name1} {res} ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿.mkv\n\n𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\n𝕯𝖔𝖜𝖓𝖑𝖔𝖆𝖉𝖊𝖉 𝕭𝖞 :\n{MR}\n\n'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-                cc1 = f'**[ 📕 ]  𝔣iℓe_IÐ :** {str(count).zfill(3)}.\n**𝔣iℓe ηαмє »** {name1} ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿.pdf\n\n𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\n𝕯𝖔𝖜𝖓𝖑𝖔𝖆𝖉𝖊𝖉 𝕭𝖞:\n{MR}\n\n'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                cc = f'**[ 🎥 ] VID ID :** {str(count).zfill(3)}.**\n**Vid Name »** {name1} {res} 𝔾-𝐔𝐓𝐒🪽.mkv\n\n𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\nᴘʀᴏᴠɪᴅᴇᴅ ʙʏ:\n{MR}\n\n'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                cc1 = f'**[ 📕 ]  FILE ID :** {str(count).zfill(3)}.\n**Fiℓe Name »** {name1} 𝔾-𝐔𝐓𝐒🪽.pdf\n\n𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**\n\nᴘʀᴏᴠɪᴅᴇᴅ ʙʏ:\n{MR}\n\n'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -266,7 +258,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 करके दे रहा हु थोड़ा टाइम लगेगा ⟱**\n\n➭ **Name »** `{name}\n➭ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n➭ Video Url »** Mai Nhi Dikhaunga**\n\n➭ 𝕭𝖔𝖙 𝓜α∂𝒆 𝐁𝐲 »\nＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿\n"
+                    Show = f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 ⟱**\n\n➭ **Name »** `{name}\n➭ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n➭ Video Url »**Padhai kr Bhai ⚔**\n\n"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -277,13 +269,13 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**फाइल 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 🌩 में कुछ प्रॉब्लम आ गई है, वापस try करता हूं 🥺 **\n{str(e)}\n➭ **Name** » {name}\n➭ **Link** » {url}"
+                    f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 🌩 ERROR**\n{str(e)}\n➭ **Name** » {name}\n➭ **Link** » {url}"
                 )
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝐏𝐮𝐫𝐚 𝐇𝐨 𝐆𝐲𝐚 𝐉𝐢𝐢 𝐁𝐚𝐭𝐜𝐡.\nखुश रहो 😎**")
+    await m.reply_text("**Kr Dikhaya 😎**\nDone By: 𝔾-𝐔𝐓𝐒🪽")
 
 
 bot.run()
