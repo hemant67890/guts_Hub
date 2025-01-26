@@ -121,10 +121,14 @@ async def account_login(bot: Client, m: Message):
     await input6.delete(True)
     await editable.delete()
 
-    thumb = input6.text
+    thumb = raw_text6
     if thumb.startswith("http://") or thumb.startswith("https://"):
-        getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
-        thumb = "thumb.jpg"
+        try:
+            wget.download(thumb, out="thumb.jpg")
+            thumb = "thumb.jpg"
+        except Exception as e:
+            thumb = "no"
+            print(f"Error Downloading Thumbnail: {e}")
     else:
         thumb == "no"
 
