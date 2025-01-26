@@ -33,7 +33,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       f" 𝐻𝑒𝓁𝓁❁ 𝐹𝓇𝒾𝑒𝓃𝒹𝓈 👋,\n\n❈ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.\n➠ Can Extract Videos & Pdf From Your **TXT** File and Upload to Telegram.\n\n➠ 𝔇𝔦𝔯𝔢𝔠𝔱𝔢𝔡 𝔅𝓎 : ＭＡＲＣＯ™x𝗧𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗼𝗿")
+       f"**Hello Everyone 👋,**\n\n❈ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭.\n➠ Can Extract Videos & Pdf From Your **TXT** File and Upload to Telegram.")
 
 @bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
