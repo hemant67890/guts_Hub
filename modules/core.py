@@ -181,7 +181,7 @@ async def download_video(url,cmd, name):
 
 
 async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
-    reply = await m.reply_text(f"⬆️ **Uᴘʟᴏᴀᴅɪɴɢ** »\n`{name}` ⚡️\n\n**《 ✪ Powered By @MARCO_MAIN ✪ 》**")
+    reply = await m.reply_text(f"⬆️ **Uᴘʟᴏᴀᴅɪɴɢ** »\n`{name}` ⚡️\n\n**《 Developed By 𝔾-𝐔𝐓𝐒🪽 》**")
     time.sleep(1)
     start_time = time.time()
     await m.reply_document(ka,caption=cc1)
@@ -195,7 +195,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:12 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"⬆️ **Uᴘʟᴏᴀᴅɪɴɢ** »\n`{name}` ⚡️\n\n**《 ✪ Powered By @MARCO_MAIN ✪ 》**")
+    reply = await m.reply_text(f"⬆️ **Uᴘʟᴏᴀᴅɪɴɢ** »\n`{name}` ⚡️\n\n**《 Developed By 𝔾-𝐔𝐓𝐒🪽 》**")
     try:
         if thumb == "no":
             thumbnail = f"{filename}.jpg"
