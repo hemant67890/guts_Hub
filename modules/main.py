@@ -21,7 +21,7 @@ from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-OWNER = int(os.environ.get("OWNER", 7548265642))
+OWNER = int(os.environ.get("OWNER", "7548265642"))
 
 bot = Client(
     "bot",
